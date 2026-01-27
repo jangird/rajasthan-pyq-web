@@ -48,4 +48,110 @@
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #003cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .card a:hover {
+      background: #001e99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📚 Rajasthan PYQ Hub</h1>
+    <p>REET | Police | Patwar | Rajasthan Exams Previous Year Papers</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <h2 class="section-title">📌 Download Previous Year Question Papers</h2>
+
+    <div class="cards">
+
+      <!-- REET -->
+      <div class="card">
+        <h2>REET Level 1</h2>
+        <a href="pyq/reet.pdf" target="_blank">Download PDF</a>
+      </div>
+
+      <!-- Rajasthan GK -->
+      <div class="card">
+        <h2>Rajasthan GK</h2>
+        <a href="pyq/ras.pdf" target="_blank">Download PDF</a>
+      </div>
+
+      <!-- Police -->
+      <div class="card">
+        <h2>Rajasthan Police</h2>
+        <a href="pyq/police.pdf" target="_blank">Download PDF</a>
+      </div>
+
+      <!-- Patwar -->
+      <div class="card">
+        <h2>Patwar Exam</h2>
+        <a href="pyq/patwar.pdf" target="_blank">Download PDF</a>
+      </div>
+
+      <!-- BSTC -->
+      <div class="card">
+        <h2>BSTC Exam</h2>
+        <a href="pyq/bstc.pdf" target="_blank">Download PDF</a>
+      </div>
+
+      <!-- REET Questions -->
+      <div class="card">
+        <h2>REET 50 Important Questions</h2>
+        <a href="reet-50-important-questions.html">Open Page</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Rajasthan PYQ Hub | Made by Devendra Jangir ❤️
+  </footer>
+
+</body>
+</html>
