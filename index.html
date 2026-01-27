@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rajasthan PYQ Hub</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-  <!-- Header -->
-  <header>
-    <h1>📚 Rajasthan PYQ Hub</h1>
-    <p>All Rajasthan Exams Previous Year Question Papers</p>
-  </header>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      color: #222;
+    }
 
-  <!-- Search Box -->
-  <section class="search-box">
-    <input type="text" id="search" placeholder="Search Exam...">
-  </section>
+    header {
+      background: linear-gradient(to right, #003cff, #0066ff);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
 
-  <!-- Exam List -->
-  <section class="exam-list" id="examList">
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-    <div class="card">
-      <h2>REET</h2>
-      <a href="pyq/reet.pdf" download>Download PYQ</a>
-    </div>
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
 
-    <div class="card">
-      <h2>RPSC 1st Grade</h2>
-      <a href="pyq/rpsc1.pdf" download>Download PYQ</a>
-    </div>
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 0;
+    }
 
-    <div class="card">
-      <h2>Rajasthan Police</h2>
-      <a href="pyq/police.pdf" download>Download PYQ</a>
-    </div>
+    .section-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 25px;
+      color: #003cff;
+    }
 
-    <div class="card">
-      <h2>Patwar</h2>
-      <a href="pyq/patwar.pdf" download>Download PYQ</a>
-    </div>
-
-    <div class="card">
-      <h2>BSTC</h2>
-      <a href="pyq/bstc.pdf" download>Download PYQ</a>
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Rajasthan PYQ Hub | Made by Devendra</p>
-  </footer>
-
-  <!-- Script -->
-  <script src="script.js"></script>
-
-</body>
-</html>
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      
